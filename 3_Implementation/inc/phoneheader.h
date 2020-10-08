@@ -1,0 +1,130 @@
+/**
+* @file phoneheader.h
+* phonebook application with 5 operations
+*
+*/
+#ifndef PHONEHEADER_H_INCLUDED
+#define PHONEHEADER_H_INCLUDED
+#include <stdio.h>
+#include<stdlib.h>
+///To store each contact,structure is defined with required fields.
+struct record
+{
+    ///To store first name
+    char first_name[30];
+    ///To store last name
+    char last_name[15];
+    ///To store gender
+    char gender[2];
+    ///To store email id
+    char email_id[20];
+    ///To store phone number
+    long long phone_number;
+};
+
+///Using typedef to create additional name to record structure.
+typedef struct record records;
+
+/// Database to store contacts(array of structures).
+records *contact[100];
+
+
+
+// functions declarations
+
+/**
+*  Lists all the contacts in the database. \n
+*  @param[in] no Total no of contacts in the database
+*  Lists all the contacts stored in the database with their respective contact details.
+*  @return 1-> contacts printed sucessfully \n
+*          -1-> no contacts in the database
+*/
+int listing(int no);
+
+/**
+*  Adds a contact to the database \n
+*  First it searches for the contact in the database using the name entered by the user.if it's not found then add it to the database.\n
+*  Add new contacts with information-> \n
+*  1)Name: First Name and Second Name \n
+*  2)Phone number \n
+*  3)Gender \n
+*  4)Email
+*  @param[in] no total no of contacts in the database
+*  @param[in] f_name First name of the contact to be added.
+*  @return Total no of contacts after adding.
+*/
+int adding(int no,char *f_name);
+
+/**
+*  Deletes a contact in the database.\n
+*  First it searches for the contact in the database using the name entered by the user.if it's found then delete it from the database.
+*  @param[in] no total no of contacts in the database
+*  @param[in] f_name First name of the contact to be deleted.
+*  @return Total no of contacts after deleting.
+*/
+int deleting(int no,char *f_name);
+
+/**
+*  Modifies a contact in the database
+*  Edit the information given while adding the contacts -> \n
+*  1)Name: First Name and Second Name \n
+*  2)Phone number \n
+*  3)Gender \n
+*  4)Email
+*  @param[in] no Total no of contacts in the database
+*  @param[in] f_name First name of the contact to be modified.
+*  @return 1->if contact is successfully modified.\n  0->if contact with similar name not found
+*  @note returns -1 if no contacts in the database
+*/
+int modifying(int no,char *f_name);
+
+/**
+*  searches a contact in the database
+* @param[in] no Total no of contacts in the database
+* @param[in] f_name first name of the contact
+* @return Index of the contact if it exists.
+* @note returns -1 if contact does not exist or NO contacts in the database.
+*/
+int searches(int no,char *f_name);
+
+/**
+*  Searches a contact in the database \n
+*  @param[in] no Total no of contacts in the database
+*  @param[in] f_name First name of the contact to be searched.
+*  Inputs the first name and sent to searches function. \n
+*  If contact is found then print its details.
+*  @return Returns 1 if contact exists else 0.
+*  @note returns -1 if contact does not exist or NO contacts in the database.
+*/
+int searching(int no,char *f_name);
+
+/**
+*  prints the contact details at the index operand1.\n
+*  displays the following information of the contacts -> \n
+*  1)Name: First Name and Second Name \n
+*  2)Phone number \n
+*  3)Gender \n
+*  4)Email
+* @param[in] operand1
+*/
+void display(int operand1);
+
+/**
+* Takes the inputs and store the contact at the index operand1.
+* @param[in] operand1
+*/
+void enter(int operand1);
+
+/**
+* Converts all the characters in the strings  to uppercase
+* @param[in] strings to converted to upper case
+*/
+void string_upper(char *strings);
+
+/**
+*  Sort the contacts in the database according to the name
+*  @param[in] no Total no of contacts in the database
+*/
+void sort_contacts(int no);
+
+#endif // PHONEHEADER_H_INCLUDED /* #define __PHONE_H__ */
