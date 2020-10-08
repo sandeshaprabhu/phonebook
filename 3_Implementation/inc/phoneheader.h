@@ -1,12 +1,14 @@
 /**
 * @file phoneheader.h
-* phonebook application with 5 operations
+* Phonebook header file. \n This header file contains definitions of all the functions. \n Structure and array pointers of same structure is defined here.
 *
 */
 #ifndef PHONEHEADER_H_INCLUDED
 #define PHONEHEADER_H_INCLUDED
 #include <stdio.h>
 #include<stdlib.h>
+///Maximum number of contacts that can be stored
+#define MAX_CONTACTS 100
 ///To store each contact,structure is defined with required fields.
 struct record
 {
@@ -25,7 +27,7 @@ struct record
 ///Using typedef to create additional name to record structure.
 typedef struct record records;
 
-/// Database to store contacts(array of structures).
+/// Database to store contacts->array pointers of structure record. \n Maximum of hundred contacts can be stored
 records *contact[100];
 
 
@@ -34,9 +36,9 @@ records *contact[100];
 
 /**
 *  Lists all the contacts in the database. \n
-*  @param[in] no Total no of contacts in the database
 *  Lists all the contacts stored in the database with their respective contact details.
-*  @return 1-> contacts printed sucessfully \n
+*  @param[in] no Total no of contacts in the database
+*  @return 1-> contacts printed successfully \n
 *          -1-> no contacts in the database
 */
 int listing(int no);
@@ -93,8 +95,8 @@ int searches(int no,char *f_name);
 *  @param[in] f_name First name of the contact to be searched.
 *  Inputs the first name and sent to searches function. \n
 *  If contact is found then print its details.
-*  @return Returns 1 if contact exists else 0.
-*  @note returns -1 if contact does not exist or NO contacts in the database.
+*  @return 1->if contact exists.\n 0->if conatct does not exists.
+*  @note Returns -1 if NO contacts in the database.
 */
 int searching(int no,char *f_name);
 
@@ -110,19 +112,19 @@ int searching(int no,char *f_name);
 void display(int operand1);
 
 /**
-* Takes the inputs and store the contact at the index operand1.
+* Takes the inputs and store the contact at the index operand1. \n It is used by adding and modifying function to take the input from user.
 * @param[in] operand1
 */
 void enter(int operand1);
 
 /**
-* Converts all the characters in the strings  to uppercase
-* @param[in] strings to converted to upper case
+* Converts all the characters in the string st1  to uppercase.
+* @param[in] st1 string is converted to upper case.
 */
-void string_upper(char *strings);
+void string_upper(char *st1);
 
 /**
-*  Sort the contacts in the database according to the name
+*  Sort the contacts in the database according to the name.
 *  @param[in] no Total no of contacts in the database
 */
 void sort_contacts(int no);
