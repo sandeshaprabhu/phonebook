@@ -28,7 +28,7 @@ struct record
 typedef struct record records;
 
 /// Database to store contacts->array pointers of structure record. \n Maximum of hundred contacts can be stored
-records *contact[100];
+records *contact[MAX_CONTACTS];
 
 
 

@@ -44,6 +44,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -54,7 +55,9 @@ $(function() {
 
 <p>Phonebook header file.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div>
 <p><a href="phoneheader_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -62,6 +65,13 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecord.html">record</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">To store each contact,structure is defined with required fields.  <a href="structrecord.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a84bfa512ba2269b77a80f391fbdde0a3"><td class="memItemLeft" align="right" valign="top"><a id="a84bfa512ba2269b77a80f391fbdde0a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phoneheader_8h.html#a84bfa512ba2269b77a80f391fbdde0a3">MAX_CONTACTS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a84bfa512ba2269b77a80f391fbdde0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of contacts that can be stored. <br /></td></tr>
+<tr class="separator:a84bfa512ba2269b77a80f391fbdde0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -111,11 +121,11 @@ First it searches for the contact in the database using the name entered by the 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab7d063f653a86f40f08c31cfc7e648a8"><td class="memItemLeft" align="right" valign="top"><a id="ab7d063f653a86f40f08c31cfc7e648a8"></a>
-<a class="el" href="phoneheader_8h.html#ad8b3cc4e1f33bd2d948290538fa14eaf">records</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phoneheader_8h.html#ab7d063f653a86f40f08c31cfc7e648a8">contact</a> [100]</td></tr>
-<tr class="memdesc:ab7d063f653a86f40f08c31cfc7e648a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database to store contacts-&gt;array pointers of structure record. <br  />
+<tr class="memitem:a7990cc58878fb4b8293d75a2992bccba"><td class="memItemLeft" align="right" valign="top"><a id="a7990cc58878fb4b8293d75a2992bccba"></a>
+<a class="el" href="phoneheader_8h.html#ad8b3cc4e1f33bd2d948290538fa14eaf">records</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="phoneheader_8h.html#a7990cc58878fb4b8293d75a2992bccba">contact</a> [<a class="el" href="phoneheader_8h.html#a84bfa512ba2269b77a80f391fbdde0a3">MAX_CONTACTS</a>]</td></tr>
+<tr class="memdesc:a7990cc58878fb4b8293d75a2992bccba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database to store contacts-&gt;array pointers of structure record. <br  />
  Maximum of hundred contacts can be stored. <br /></td></tr>
-<tr class="separator:ab7d063f653a86f40f08c31cfc7e648a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7990cc58878fb4b8293d75a2992bccba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Phonebook header file. </p>

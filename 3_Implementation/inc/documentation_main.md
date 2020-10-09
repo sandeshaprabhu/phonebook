@@ -23,8 +23,13 @@ Phone book system is a program to store all-important contact details. This will
    </tr>
    <tr>
       <td>3</td>
-      <td>@subpage Source file</td>
+      <td>Source file</td>
 	  <td>@subpage phonebook_operations.c</td>
+   </tr>
+   <tr>
+      <td>4</td>
+      <td>Test file file</td>
+	  <td>@subpage test_phonebook.c</td>
    </tr>
 </table>
 

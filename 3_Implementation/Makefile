@@ -23,10 +23,10 @@ PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
-$(PROJECT_NAME):all
+$(PROJECT_NAME):all .PHONY
 
 # Run the target even if the matching name exists
-.PHONY: run clean test  doc all
+.PHONY: run doc test all
 
 all: $(SRC) $(BUILD)
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out

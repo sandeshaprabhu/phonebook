@@ -51,6 +51,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="last_name"><param name="Local" value="structrecord.html#af256c86492cd43fc54a004255e2344bd"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="phone_number"><param name="Local" value="structrecord.html#a5cacbe629cb4240720de1feaf720f683"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MAX_CONTACTS"><param name="Local" value="phoneheader_8h.html#a84bfa512ba2269b77a80f391fbdde0a3"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="records"><param name="Local" value="phoneheader_8h.html#ad8b3cc4e1f33bd2d948290538fa14eaf"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="adding"><param name="Local" value="phoneheader_8h.html#a8e3e6e97a5c45960ddcfde590d7044db"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="deleting"><param name="Local" value="phoneheader_8h.html#a5ae43dc2668020fee693ccda82aca195"><param name="ImageNumber" value="11"></OBJECT>
@@ -62,7 +63,7 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="searching"><param name="Local" value="phoneheader_8h.html#ae856acc5bcc889aa7f06c46d3f3bf010"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="sort_contacts"><param name="Local" value="phoneheader_8h.html#a447d00057667d7ef66cf818df15b66f2"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="string_upper"><param name="Local" value="phoneheader_8h.html#a109f0ef1d659b75e5f76cd30dda525e6"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="contact"><param name="Local" value="phoneheader_8h.html#ab7d063f653a86f40f08c31cfc7e648a8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="contact"><param name="Local" value="phoneheader_8h.html#a7990cc58878fb4b8293d75a2992bccba"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="project_main.c"><param name="Local" value="project__main_8c.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -71,6 +72,7 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="test_phonebook.c"><param name="Local" value="test__phonebook_8c.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PROJECT_NAME"><param name="Local" value="test__phonebook_8c.html#ae73053051efbb45c3a39751f5ce9fb36"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="main"><param name="Local" value="test__phonebook_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="test_adding"><param name="Local" value="test__phonebook_8c.html#a8da00a5ab157572d7dbe76b9d1d8e958"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="test_deleting"><param name="Local" value="test__phonebook_8c.html#ad67327e7816cd52b9ca292fb0bd66b87"><param name="ImageNumber" value="11"></OBJECT>
@@ -85,6 +87,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="globals_func.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="globals_vars.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Typedefs"><param name="Local" value="globals_type.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Macros"><param name="Local" value="globals_defs.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   </UL>
 </UL>

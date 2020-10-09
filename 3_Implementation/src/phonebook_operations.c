@@ -23,7 +23,7 @@ int listing(int no)
         //Printing the contacts
         for(int i=0;i<no;i++)
         {
-            printf("\n\nDetails of the %d contact\n",i+1);
+            printf("\n\nDetails of the contact %d\n",i+1);
             display(i);
         }
         return(1);
@@ -33,7 +33,11 @@ int listing(int no)
 //Adding a new contact
 int adding(int no,char *f_name)
 {
-
+	if(no==MAX_CONTACTS)
+	{
+		printf("Database is full...!!");
+		return(no);
+	}
     int found_flag=searches(no,f_name);
     if(found_flag!=-1)
     {
@@ -107,8 +111,8 @@ int modifying(int no,char *f_name)
     {
         printf("\nThe existing details of the contact:%s",f_name);
         display(found_flag);
-        printf("----------------");
-        printf("\n---Enter the new details of the contact---");
+        printf("\n--------------------\n");
+        printf("\n\n---Enter the new details of the contact---");
         printf("\nEnter first name:");
         scanf("%29s",contact[found_flag]->first_name);
         string_upper(contact[found_flag]->first_name);
@@ -136,7 +140,7 @@ int searching(int no,char *f_name)
     int found_flag=searches(no,f_name);
     if(found_flag!=-1)
     {
-        printf("\nContact with first name %s is found at %dth position",f_name,found_flag+1);
+        printf("\nContact with first name %s is found at position %d",f_name,found_flag+1);
         display(found_flag);
         return(1);
     }
@@ -168,7 +172,7 @@ int searches(int no,char *f_name)
     return(-1);
 }
 
-//displaying the contact
+//displaying the contact information
 void display(int n)
 {
     printf("\nNAME: %s %s",contact[n]->first_name,contact[n]->last_name);
@@ -181,7 +185,7 @@ void display(int n)
     fflush(stdin);
 }
 
-//Enter the information
+//Enter the contact information
 void enter(int n)
 {
    printf("\nEnter last name:");
