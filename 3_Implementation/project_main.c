@@ -1,6 +1,8 @@
 /**
 * @file project_main.c
-* main C file of the program
+* main C file of the program.
+* Flowchart of project_main.c
+* \image html main.jpg
 */
 
 #include <stdio.h>
