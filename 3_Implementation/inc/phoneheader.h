@@ -19,7 +19,7 @@ struct record
     ///To store gender
     char gender[2];
     ///To store email id
-    char email_id[20];
+    char email_id[30];
     ///To store phone number
     long long phone_number;
 };
@@ -40,7 +40,7 @@ records *contact[MAX_CONTACTS];
 *  @param[in] no -> Total no of contacts in the database.
 *  @return 1-> All contacts listed successfully. \n
 *          -1-> NO contacts in the database.
-* Flowchart of Listing function
+* \n Flowchart of Listing function
 * \image html listing.jpg
 */
 int listing(int no);
@@ -56,7 +56,7 @@ int listing(int no);
 *  @param[in] no total no of contacts in the database
 *  @param[in] f_name First name of the contact to be added.
 *  @return Total no of contacts after adding.
-* Flowchart of Adding function
+* \n Flowchart of Adding function
 * \image html adding.jpg
 */
 int adding(int no,char *f_name);
@@ -67,7 +67,7 @@ int adding(int no,char *f_name);
 *  @param[in] no total no of contacts in the database
 *  @param[in] f_name First name of the contact to be deleted.
 *  @return Total no of contacts after deleting.
-* Flowchart of Deleting function
+* \n \b Flowchart \b of  \b Deleting \b function. 
 * \image html deleting.jpg
 */
 int deleting(int no,char *f_name);

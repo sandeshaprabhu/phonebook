@@ -197,7 +197,7 @@ void enter(int n)
    scanf("%1s",contact[n]->gender);
    string_upper(contact[n]->gender);
    printf("\nEnter Email ID:");
-   scanf("%19s",contact[n]->email_id);
+   scanf("%29s",contact[n]->email_id);
 }
 
 // To convert string to upper case
