@@ -57,8 +57,8 @@ void test_listing(void)
    int no=0;
   CU_ASSERT(-1 == listing(no));
   
-  /* Dummy fail*/
-  CU_ASSERT(1 == listing(no));
+  //* Dummy fail*/
+  CU_ASSERT(-1 == listing(0));
 }
 
 //testing adding with same name
@@ -93,8 +93,8 @@ void test_adding(void)
 	
   CU_ASSERT(3 == adding(no,"ram"));
   
-  /* Dummy fail*/
-  CU_ASSERT(4 == adding(no,"bham"));
+  //* Dummy fail*/
+  CU_ASSERT(3 == adding(no,"bham"));
   //freed allocated space
   for(int i=0;i<no;i++)
    {
@@ -132,8 +132,8 @@ void test_deleting(void)
    
   CU_ASSERT(2 == deleting(no,"sham"));
   
-  /* Dummy fail*/
-  CU_ASSERT(1 == deleting(2,"laxman"));
+  //* Dummy fail*/
+  CU_ASSERT(2 == deleting(2,"laxman"));
   free(contact[0]);
   free(contact[1]);
 }
@@ -169,8 +169,8 @@ void test_modifying(void)
    
   CU_ASSERT(0 == modifying(no,"laxman"));
   
-  /* Dummy fail*/
-  CU_ASSERT(1 == modifying(0,"bharath"));
+  //* Dummy fail*/
+  CU_ASSERT(0 == modifying(3,"bharath"));
   
   for(int i=0;i<no;i++)
    {
@@ -209,8 +209,8 @@ void test_searching(void)
    
   CU_ASSERT(1 == searching(no,"ram"));
   
-  /* Dummy fail*/
-  CU_ASSERT(1 == searching(no,"laxman"));
+  //* Dummy fail*/
+  CU_ASSERT(0 == searching(no,"laxman"));
   
   for(int i=0;i<no;i++)
    {
