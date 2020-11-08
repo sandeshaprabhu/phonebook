@@ -9,6 +9,7 @@ VERSION:1.0.0 \n \n
 Phone book system is a program to store all-important contact details. This will help the user to easily search and manage contacts using this system.\n The basic concepts of C like Functions, Structures are used in this program.This program will add, delete, modify or edit, search and list contacts in the database.\n structures are used to store contacts.array of pointers of type structure contact is used to store address of the each contact. \n Whenever new contact is being added, a block of memory is reserved of size structure contact and contact details are stored. \n similarly when deleting the contact the allocted memory is freed and returns back to the operating system.
 
 <table>
+
    <tr>
 	  <th colspan="3">List of files</th>
    <tr>
@@ -32,6 +33,3 @@ Phone book system is a program to store all-important contact details. This will
 	  <td>@subpage test_phonebook.c</td>
    </tr>
 </table>
-
-
-

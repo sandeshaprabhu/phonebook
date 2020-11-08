@@ -23,7 +23,7 @@ PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
-$(PROJECT_NAME):all .PHONY
+$(PROJECT_NAME):all
 
 # Run the target even if the matching name exists
 .PHONY: run test doc clean all
