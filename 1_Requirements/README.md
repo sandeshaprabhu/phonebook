@@ -9,8 +9,7 @@ phonebook uses database to store contacts.here database is array of structures.A
 
 There are 5 operations supported by phonebook management system.
 1)Listing
-	Listing all the contacts in the database.it will print the contact inforamtion details and 
+   Listing all the contacts in the database.it will print the contact inforamtion details and 
 *	Capture all the requirements wrt system, module, interface, integration, testing, Functional and Non-functional
 *	Captures Basic Planning of the project through - Sample Gantt Chart attached
-
 *	Tools: MS Excel, MS word or Similar
