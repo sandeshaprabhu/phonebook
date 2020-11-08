@@ -26,7 +26,7 @@ DOCUMENTATION_OUTPUT = documentation/html
 $(PROJECT_NAME):all .PHONY
 
 # Run the target even if the matching name exists
-.PHONY: run clean doc test all
+.PHONY: run test doc clean all
 
 all: $(SRC) $(BUILD)
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out

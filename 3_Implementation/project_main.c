@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<string.h>
-#include<conio.h>
 #include <phoneheader.h>
 
 /// Global variable to store total no of contacts.Initially no contacts.
@@ -71,7 +70,8 @@ first: printf("\t\t\t\tList of operations\n\n");
                   goto first;//return to enter choice
       }
       printf("\n\nPress any key to continue to Menu\n");
-      getch();
+	  fflush(stdin);
+      getchar();
       goto first;
       return 1;
 }
