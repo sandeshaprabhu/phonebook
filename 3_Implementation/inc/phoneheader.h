@@ -94,6 +94,7 @@ int modifying(int no,char *f_name);
 * @param[in] f_name ->first name of the contact
 * @return Index of the contact if it exists.
 * @note returns -1 if contact does not exist or NO contacts in the database.
+* \image html searches.jpg
 */
 int searches(int no,char *f_name);
 
@@ -135,6 +136,7 @@ void enter(int operand1);
 /**
 * Converts all the alphabetical characters in the string st1  to uppercase.
 * @param[in] st1 string is converted to upper case.
+* \image html string_upper.jpg
 */
 void string_upper(char *st1);
 
@@ -142,6 +144,7 @@ void string_upper(char *st1);
 *  Sort the contacts in the database according to the name.
 *  Contacts are sorted in lexicographical order.
 *  @param[in] no Total no of contacts in the database
+* \image html sort_contacts.jpg
 */
 void sort_contacts(int no);
 
