@@ -6,10 +6,10 @@ phonebook uses database to store contacts.here database is array of structures.A
 
 **Functional requirements** 
 There are 5 operations supported by phonebook management system.
-1)Listing:Listing all the contacts in the database.
-2)Adding:Adding contacts to the database.
-3)Deleting:Deleting contacts from the database.
-4)Modifying:Modifying contacts in the database.
+1) Listing:Listing all the contacts in the database.
+2) Adding:Adding contacts to the database.
+3) Deleting:Deleting contacts from the database.
+4) Modifying:Modifying contacts in the database.
 
 **Non-functional requirements**
 1) Initially user should define the maximum number of contacts.
