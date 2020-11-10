@@ -1,7 +1,7 @@
-# Test plan and test output
+# Test plan and test output.
 
 Testing involves the design of test cases that validate that the internal program logic of the phonebook application is functioning properly.
-Testing is done on functions add, delete list, modify and search.
+Testing is done on functions add, delete list, modify and search.cunit library is used for unit testing.
 
 ## Testing of adding function->
 1)  Test case 1-: To add the record in the database with the same name.
