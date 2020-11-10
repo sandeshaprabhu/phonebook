@@ -5,9 +5,9 @@ phonebook stores the basic contact inforamtion such as Name,Phone Number,Gender,
 phonebook uses database to store contacts.here database is array of structures.An array of pointers of type structure is used to store the contacts.whenever a new contact is being added,memory is allocated in heap and stores it in that location.similarly when a contact is deleted,the memory is freed in that location where the contact was stored.
 
 **Functional requirements** 
-There are 5 operations supported by phonebook management system. \n
-1)Listing:Listing all the contacts in the database. \n
-2)Adding:Adding contacts to the database. \n
+There are 5 operations supported by phonebook management system.
+1)Listing:Listing all the contacts in the database.
+2)Adding:Adding contacts to the database.
 3)Deleting:Deleting contacts from the database.
 4)Modifying:Modifying contacts in the database.
 
