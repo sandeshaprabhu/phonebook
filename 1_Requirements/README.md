@@ -24,7 +24,3 @@ OS:- Windows/linux
 Compiler:- gcc compiler.  
 Doxygen:- To document the code.  
 Make:- To build and manage the project automatically.
-
-* Capture all the requirements wrt system, module, interface, integration, testing, Functional and Non-functional
-* Captures Basic Planning of the project through - Sample Gantt Chart attached
-* Tools: MS Excel, MS word or Similar
